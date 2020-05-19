@@ -50,7 +50,7 @@ spec:
           value: /mnt/cache/$(POD_NAME)
         - name: GRAFANA_SERVER_URL
           value: http://grafana:30070
-        image: index.docker.io/sourcegraph/frontend:3.14.4
+        image: index.docker.io/sourcegraph/frontend:3.16.0@sha256:055560401f9c06f0d56fdad9b9233a99770c573a48bd84d27b16609ac1c9658d
         terminationMessagePolicy: FallbackToLogsOnError
         livenessProbe:
           httpGet:
